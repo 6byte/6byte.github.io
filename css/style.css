@@ -1,0 +1,202 @@
+/* 其他用户上线提示 */
+.login{
+	top: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+/* 访客数量开始 */
+.view{
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+/* 访客数量结束 */
+
+/* 内容区域开始 */
+#first .info{
+	margin-top: 10%;
+	margin-left: 42%;
+	min-width: 400px;
+	min-height: 300px;
+	position: absolute;
+	transform: rotateZ(-32deg);
+
+}
+/* 内容区域结束 */
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+#third .level{
+	width: 800px;
+	height: 400px;
+	box-shadow: 0 0  50px #0a0a0aad ,inset 0 0  20px #0a0a0aad;
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+	margin-left:50% ;
+	top: 50px;
+	transform: translateX(-75%);
+	display: none;
+}
+
+
+
+.skills{
+	top: -10%;
+	left: 50px;
+	right: 0;
+	bottom: 0;
+	width: 900px;
+	height: 600px;
+	margin: auto;
+	position: absolute;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 0  50px #eee7e7ad;
+}
+.skills .mtext::first-letter{
+	color: rebeccapurple;
+}
+/* 旁边导航开始 */
+.msidebar{
+	top: 30%;
+	right: 20px;
+	width: 120px;
+	position: fixed;
+	transform: translateX(-50%);
+	opacity: 0.5;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgba(73, 70, 70, 0.623);
+	box-shadow: 0 0  50px #eee7e7ad;
+}
+.msidebar h5:hover{
+	cursor: pointer;
+}
+.msidebar:hover{
+	cursor: pointer;
+	transition: 1s;
+	opacity: 1;
+}
+.msidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.msidebar ul li{
+	border-radius: 5px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.msidebar ul li:hover{
+	cursor: pointer;
+}
+.msidebar li.active{
+	color: pink;
+	background-color: rgb(233, 49, 162);
+}
+	/* 旁边导航结束 */
+/* 第一区开始 */
+#first {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -100;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/first.jpg');
+}
+/* 第一区结束 */
+
+
+/* 第二区域开始 */
+#second {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -100;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/second.jpg');
+}
+/* 第二区域结束 */
+
+	/* 第二区域开始 */
+#third {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -100;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/third.webp');
+}
+
+#fourth {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -100;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/fourth.webp');
+}
+/* 第二区域结束 */
+
+/* 加载开始 */
+.loading {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100px;
+	margin: auto;
+	height: 100px;
+	position: fixed;
+}
+
+.loading p {
+	margin: 0;
+}
+
+/* 加载结束 */
+.mbody{
+	display: none;
+}
+
+/* 自定义滚动条 */
+body::-webkit-scrollbar {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+body::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+body::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+body::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(148, 52, 151, 0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+/* 禁止选中文本 */
+body{-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+	not supported by any browser */}
