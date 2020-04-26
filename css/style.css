@@ -40,11 +40,12 @@ html {
 	top: 50px;
 	transform: translateX(-75%);
 	display: none;
+
 }
 
 
 
-.skills{
+.object{
 	top: -10%;
 	left: 50px;
 	right: 0;
@@ -56,10 +57,15 @@ html {
 	border-radius: 10px;
 	background-color: #fff;
 	box-shadow: 0 0  50px #eee7e7ad;
+	background-image: url(https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/bgimg.jpg);
+	background-size: cover;
 }
-.skills .mtext::first-letter{
-	color: rebeccapurple;
+.object div{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
 }
+
 /* 旁边导航开始 */
 .msidebar{
 	top: 30%;
