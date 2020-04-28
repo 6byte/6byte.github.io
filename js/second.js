@@ -8,8 +8,8 @@ $(".skill-content >.position-absolute").eq(0).show()
 let skillCard = [{
     title: '0->1',
     imgSrc: 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/1.png',
-    content: '从UI设计到Linux部署发布',
-    footer: '已完整上线项目'
+    content: '从UI到Linux部署发布',
+    footer: '认知全流程'
 },
 {
     title: '主流技术栈',
