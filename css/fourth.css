@@ -14,7 +14,7 @@
 	height: 100%;
 	position: relative;
 	background-color: #fff;
-	background-image: url(../src/fourth/img/bgimg-half.jpg);
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/fourth/img/bgimg-half.jpg');
 }
 .page-info{
 	width: 800px;
@@ -23,7 +23,7 @@
 	top: 30%;
 	left: -60%;
 	transform: translateX(100%);
-	background-image: url('../src/fourth/img/wooden.jpg');
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/fourth/img/wooden.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
