@@ -2,9 +2,10 @@
  * 该文件存放所有可复用函数
  * 
  */
-
 let func = {
+    // 
     showTips: function (msg) {
+        $('.login').show()
         $('.login b').text(msg)
     },
     /**
@@ -34,6 +35,22 @@ let func = {
                 }, wait);
             }
         }
+    },
+    ajax:function(url, data) {
+        return new Promise((res, rej) => {
+            $.ajax({
+                type: "get",
+                url: url,
+                data: data,
+                dataType: "json",
+                success: function (data) {  
+                    res(data)
+                },
+                error: function (err) {
+                    rej(err)
+                }
+            });
+        })
+    
     }
-
 }

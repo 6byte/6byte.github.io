@@ -1,0 +1,74 @@
+/* 第二区域开始 */
+#second {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/second.jpg');
+}
+
+/* 内容区 */
+#second .skill-info{
+	width: 900px;
+	height: 450px;
+	position: relative;
+	top: 200px;
+	left: 30%;
+	box-shadow: 0 0 50px #ffffff;
+	border-radius: 10px;
+	
+	background: #eef3f5;  /* fallback for old browsers */
+}
+/* 导航开始 */
+#second .skill-nav{
+	display: flex;
+	flex-direction: column;
+}
+/* end */
+
+#second .skill-nav li{
+	padding-top: 10px;
+	flex: 1;
+}
+/* 标题开始 */
+#second .skill-title span{
+	font-size: 32px;
+	line-height: 50px;
+	position: relative;	
+}
+
+#second .skill-title span::after{
+	content: '';
+	position: absolute;
+	right: -25px;
+	width: 20px;
+	height: 20px;
+	background-image: url('../src/second/img/Fire.png');
+	background-size: cover;
+	background-position: center;
+}
+/* end */
+/* 导航开始 */
+#second .skill-nav li:hover{
+	transition: 0.2s;
+	border-radius: 10px;	
+	transition: 1s;
+}
+#second .skill-nav li:hover img{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+/* end */
+#second .card{
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+#second .card:hover h5{
+	
+	color: slateblue;
+	transition: 2s;
+}
+#second .skill-content .h-100{
+	display: none;
+}

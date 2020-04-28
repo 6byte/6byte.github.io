@@ -1,86 +1,53 @@
-// 该类用于创建对象
+// 显示第一个
 
-class soldier {
-    constructor(x = 0, y = 0, name) {
-        this.x = x
-        this.y = y
-        // 根节点
-        this.objParentNode = $('.girl')
-        this.name = name
-        this.id = '#' + name
-        // 技能施放速度
-        this.speed = 80
-        this.host = reomateHost.host
-    }
-    // 初始化
-    init() {
-        let that = this
-        this.create(that)
-        func.debounce(that.event(that), 200, true)
-    }
-    // 创建
-    create(that) {
+$(".skill-nav li").click(function (e) {
+    $(".skill-content>.position-absolute").eq($(this).index()).show().siblings().hide()
+});
+$(".skill-content >.position-absolute").eq(0).show()
 
-        that.objParentNode.append(`<div id=${that.name}><img src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/game/normal/1933_0.png" ></div> `)
+let skillCard = [{
+    title: '0->1',
+    imgSrc: 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/1.png',
+    content: '从UI设计到Linux部署发布',
+    footer: '已完整上线项目'
+},
+{
+    title: '主流技术栈',
+    imgSrc: 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/smart.png',
+    content: 'SpringBoot,Vue,Mysql',
+    footer: '适合大部分项目'
+},
+{
+    title: '1>1+1',
+    imgSrc: 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/full.png',
+    content: '完全独立开发，减少沟通障碍',
+    footer: ''
+},
+]
+// v-for渲染页面
+for (let key in skillCard) {
 
-    }
-    // 通过一个event接收键盘事件，并传给其他动作
-    event(that) {
-
-
-
-        window.onkeydown = function (e) {
-            console.log(that);
-            that.filterKey(e, that)
-            that.skill(e, that)
-            that.action(e)
-        }
-    }
-    // 移动
-    filterKey(e, that) {
-        if (e.which == 38 || e.which == 40) {
-            e.preventDefault()
-        }
-
-    }
-    //释放技能
-    skill(e, that) {
-        switch (e.which) {
-            // J键
-            case 74: {
-                let tmp = 0
-                let imgAction = setInterval(function () {
-                    $(that.id).find('img').attr('src', 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/game/normal/1933_' + tmp++ + '.png')
-                    if (tmp == 8) {
-                        window.clearInterval(imgAction)
-                    }
-                    console.log('执行');
-                }, that.speed)
-                break;
-            }
-
-            case 75: {
-                let tmp = 0
-                let imgAction = setInterval(function () {
-                    $(that.id).find('img').attr('src', 'https://sixbyte.oss-cn-shanghai.aliyuncs.com//game/axe/1931_' + tmp++ + '.png')
-                    if (tmp == 8) {
-                        window.clearInterval(imgAction)
-                    }
-                    console.log('执行');
-                }, that.speed)
-                break;
-            }
-            default:
-                break;
-        }
-
-
-    }
-    // 动作,切换图片
-    action() {
-
-    }
+    $('#skill-card').append(
+        `
+<div class="col  pr-0 mb-2">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right">
+                <img src="${skillCard[key].imgSrc}"
+                    class="card-img img-fluid p-4">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-2">
+                    <h5 class="card-title text-dark text-center">${skillCard[key].title}</h5>
+                    <p class="card-text text-dark">${skillCard[key].content}</p>
+                    <p class="card-text text-right text-muted pt-2">
+                        <small>${skillCard[key].footer}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`
+    )
 }
-
-let msoldier = new soldier(20, -20, "soldier");
-msoldier.init()

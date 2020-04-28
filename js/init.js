@@ -2,23 +2,27 @@
  * 本文件用于初始化页面
  */
 
-document.addEventListener('contextmenu',function(e){
+document.addEventListener('contextmenu', function (e) {
     e.preventDefault()
 })
 // DOM元素完成后触发
 $(window).ready(function () {
-    $('.level').hide()
-   // 初始化高度
-   setTimeout(function () {
-       $('.mbody').show()
-       $('.level').show()
-       $('.loading').hide()
-      
-   }, 100)
-   $('#first').height($(document.body).height())
-   $('#second').height($(document.body).height())
-   $('#third').height($(document.body).height())
-   $('#fourth').height($(document.body).height())
+    $('.global').show()
+    $('.mbody').show()
+    $('.loading').hide()
+    // 初始化高度
+    let height = $(document.body).height()
+    $('#first').height(height)
+    $('#second').height(height)
+    $('#third').height(height)
+    $('#fourth').height(height)
+
+    // 禁止拖拽图片
+    function imgdragstart() {
+        return false;
+    }
+    for (i in document.images) document.images[i].ondragstart = imgdragstart;
+
 })
 
 // 给侧边栏添加事件
@@ -47,40 +51,35 @@ function mscroll(e) {
     if (delta > 0 && globalScroll.flag > 0) {
         // 向上滚
 
-        $('body,html').animate({
-            scrollTop: $(document.body).height() * --globalScroll.flag
-        }, 500);
+        $('body,html').scrollTop($(document.body).height() * --globalScroll.flag)
     } else if (delta < 0 && globalScroll.flag < 3) {
-        $('body,html').animate({
-            scrollTop: $(document.body).height() * ++globalScroll.flag
-        },
-            500
-        );
+        $('body,html').scrollTop($(document.body).height() * ++globalScroll.flag)
+       
         // 向下滚
     }
     $('.msidebar').find('li').eq(globalScroll.flag).addClass('animated pulse active').siblings().removeClass('animated pulse active')
     switch (globalScroll.flag) {
         case 1: {
-            $('.msidebar').css({ 'background-color': "white" })
-            setTimeout(function () { $('#second').addClass('animated pulse active') },1000)
             
+            $('.msidebar').css({ 'background-color': "white" })
             break;
         }
         case 2: {
             $('.msidebar').css({ 'background-color': "white" })
-            setTimeout(function () { $('#third').addClass('animated rubberBand active') },1000)
-            
             break;
         }
+        case 3:{
+            $('.page-info').fadeIn(2000)
+            break;
+        }
+
     }
 
-// 全屏滚动结束
-
-// fourth开始
-
-// fourth结束
+    // 全屏滚动结束
 
 }
+
+
 
 
 

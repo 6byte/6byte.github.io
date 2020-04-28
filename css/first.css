@@ -1,0 +1,28 @@
+/* 第一区开始 */
+#first {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -100;
+	background-image: url('https://sixbyte.oss-cn-shanghai.aliyuncs.com/img/first.jpg');
+}
+/*end */
+/* 内容区域开始 */
+#first .info{
+	margin-top: 10%;
+	margin-left: 42%;
+	min-width: 400px;
+	min-height: 300px;
+	position: absolute;
+	transform: rotateZ(-32deg);
+
+}
+/* end */
+
+/* 自我介绍开始 */
+#first .introduce{
+	
+}
+/* end */
