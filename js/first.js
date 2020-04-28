@@ -1,8 +1,8 @@
 let personInfo = {
-    wechat: 'wechat15',
-    phone: '13597564895',
-    native: 'Hunan',
-    level:'初级工程师'
+    wechat: 'xxx',
+    phone: 'xxx',
+    native: 'xxx',
+    level:'xxx'
 }
 for (let key in personInfo) {
     $('#personInfo').append(

@@ -18,9 +18,9 @@ let skillCard = [{
     footer: '适合大部分项目'
 },
 {
-    title: '1>1+1',
+    title: '独立',
     imgSrc: 'https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/full.png',
-    content: '完全独立开发，减少沟通障碍',
+    content: '完全个人开发，减少沟通障碍',
     footer: ''
 },
 ]

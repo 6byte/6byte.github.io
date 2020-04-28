@@ -42,7 +42,7 @@ $('.msidebar').find('li').each((i, e) => {
 
 
 /* 全屏滚动 */
-$(document).on("mousewheel DOMMouseScroll", func.debounce(mscroll, 200, false));
+$(document).on("mousewheel DOMMouseScroll", func.debounce(mscroll, 150, false));
 function mscroll(e) {
     var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||
         (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));
@@ -74,9 +74,7 @@ function mscroll(e) {
         }
 
     }
-
     // 全屏滚动结束
-
 }
 
 
