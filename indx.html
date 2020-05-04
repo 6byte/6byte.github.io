@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6Byte</title>
+    <link rel="stylesheet" href="https://sixbyte.oss-cn-shanghai.aliyuncs.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css//third.css">
+    <link rel="stylesheet" href="./css/first.css">
+    <link rel="stylesheet" href="./css/second.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/fourth.css">
+
+</head>
+
+<body class="d-none d-xl-block">
+    <div id="wrap">
+        <div id="main">
+            <!-- 第一页，基本信息开始 -->
+            <div id="first" class="page">
+                <!-- 基本信息开始 -->
+                <div class="info">
+                    <h1 class="text-center  pb-2"> <span class="mpink">资</span>料</h1>
+                    <div class="row">
+                        <div class="col "></div>
+                    </div>
+                    <div>
+                        <ul id="personInfo">
+                            <li>
+                                <div class="row text-center mt-4 mb-2">
+                                    <div class="col">名字</div>
+                                    <div class="col mpurple">文龙</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="alert alert-light text-center" role="alert">
+                            一些简要信息
+                        </div>
+                        <li class=" pt-2">
+                            <div class="row no-gutters">
+                                <div class="col-7 offset-1">
+                                    <button class="btn btn-block btn-outline-info btn-sm" data-toggle="modal"
+                                        data-target="#modal-info">二维码</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-block btn-outline-primary btn-sm" data-toggle="modal"
+                                        data-target="#modal-info">其他</button>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+
+            <!-- 第二页，技能信息开始 -->
+            <div id="second" class="page">
+                <div class="skill-info">
+                    <div class="row h-100">
+                        <!-- 侧边导航 -->
+                        <div class="col pt-2 col-2 border-right border-info pr-0">
+                            <ul class="skill-nav h-50 text-center ">
+                                <li>
+                                    <p>
+                                        <img src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/basic.png"
+                                            class="img-fluid w-25">
+                                    </p>
+                                    <small> <span class="mpink">基</span>础信息</small>
+                                </li>
+                                <li>
+                                    <p><img src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/basic.png"
+                                            class="img-fluid w-25"></p>
+                                    <small>编程功底</small>
+                                </li>
+                                <li>
+                                    <p>
+                                        <img src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/second/img/basic.png"
+                                            class="img-fluid w-25">
+                                    </p>
+
+                                    <small>其他信息</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 右边内容 -->
+                        <div class=" col col-10 ">
+                            <!-- 基本信息开始 -->
+                            <div class="row h-100 skill-content ">
+                                <div class="col h-100 position-absolute  p-0">
+                                    <div class="skill-title text-muted p-4 ">
+                                        <span>开发特点</span>
+                                    </div>
+                                    <div class="container-fluid text-center">
+                                        <!-- 使用类似Vue 的 v-for渲染页面 -->
+                                        <div class="row w-100 row-cols-2 " id="skill-card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <!-- 编程介绍 -->
+                                <div class="col p-0 w-100 h-100 position-absolute">
+                                        <div class="col p-0 w-100" style="height:100%">
+                                            <div class="mit-info">
+                                                <ul >
+                                                    <li >1</li>
+                                                    <li>2</li>
+                                                    <li class="active">3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                </div>
+
+
+
+                                <div class="col h-100 position-absolute p-0">
+                                    <!-- 时间轴 -->
+                                    <div class="w-75 text-center mtimer">
+                                        <div class="timeline-small ">
+                                            <div class="timeline-small-body">
+                                                <ul>
+                                                    <li class="pb-4 pt-4  mb-2">
+                                                        <div class="bullet blue"></div>
+                                                        <div class="date msmall">XXXX年XX月XX日</div>
+                                                        <div class="desc">
+                                                            <h3 class="mh2 p-1">内容段落1</h3>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="pb-4 pt-4  mb-2">
+                                                        <div class="bullet blue"></div>
+                                                        <div class="date msmall">XXXX年XX月XX日</div>
+                                                        <div class="desc">
+                                                            <h3 class="mh2 p-1">内容段落1</h3>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                        </div>
+                                                    </li>
+                                                    <li class="pb-4 pt-4 mb-2">
+                                                        <div class="bullet blue"></div>
+                                                        <div class="date msmall">XXXX年XX月XX日</div>
+                                                        <div class="desc">
+                                                            <h3 class="mh2 p-1">内容段落1</h3>
+                                                            <h4 class="text-info mh3 p-1">内容段落2内容段落2内容段落2内容段落2</h4>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="third" class="page">
+
+            </div>
+
+            <!-- 第四页，拓展信息考开始 -->
+            <div id="fourth" class="page">
+
+            </div>
+            <!--end-->
+        </div>
+
+    </div>
+    <!-- -----内容区结束----- -->
+
+
+
+    <!-- 全局区开始 -->
+
+    <!-- 加载图标开始 -->
+    <div class="loading text-center ">
+
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p class="mt-2">正在加载资源</p>
+    </div>
+    <!-- 加载图标结束 -->
+    <div class="global">
+        <!-- 访客数量开始 -->
+        <div class="view">
+            <h3>访客数量<span class="badge badge-dark"></span></h3>
+        </div>
+        <!-- 访客数量开始 -->
+
+
+
+        <!-- 侧边导航开始 -->
+        <div class="msidebar d-none d-xl-block">
+            <h5 class="text-muted text-center">左侧导航</h5>
+            <ul>
+                <li class="active"><a href="#first">基本资料</a> </li>
+                <li><a href="#second">开发信息</a></li>
+                <li><a href="#third">项目信息</a></li>
+                <li> <a href="#fourth">留言反馈</a></li>
+            </ul>
+        </div>
+        <!-- 侧边导航结束 -->
+
+        <!-- 模态框开始 -->
+        <div class="tips">
+            <div class="modal fade" id="modal-info" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header p-2">
+                            <h5 class="modal-title">提示</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="
+							https://sixbyte.oss-cn-shanghai.aliyuncs.com/src/first/img/d82573049c2dd3bc1563735d930114e.jpg" alt="个人二维码"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 用户上线提示开始 -->
+        <div class="login position-fixed  w-75  ">
+            <div class="alert alert-light text-center  alert-dismissible fade mt-2" role="alert">
+                <b>有用户上线</b>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 用户上线提示结束 -->
+    <!-- 全局区结束 -->
+
+    <script src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/js/jquery-3.5.0.min.js"></script>
+    <script src="https://sixbyte.oss-cn-shanghai.aliyuncs.com/js/bootstrap.min.js"></script>
+    <!-- 公共属性 -->
+    <script src="./js/attribute.js"></script>
+
+    <!-- 公共功能函数 -->
+    <script src="./js/function.js"></script>
+    <!-- 页面初始化 -->
+    <script src="./js/init.js"></script>
+    <script src="./js/first.js"></script>
+    <script src="./js/second.js"></script>
+    <script src="./js/fourth.js"></script>
+
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>

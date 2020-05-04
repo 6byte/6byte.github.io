@@ -12,4 +12,11 @@ let reomateHost ={
     // 对象存储
     oss:''
 }
-
+let fourth = {
+    path:{
+        //添加留言
+        addCom:'/fourth/addComm',
+        // 查询留言
+        findComm:'/fourth/findComm'
+    }
+}

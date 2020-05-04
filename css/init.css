@@ -305,3 +305,6 @@ a:hover{
 a{
 	color: black ;
 }
+.m-over-hidden{
+	overflow: hidden;
+}

@@ -26,28 +26,32 @@ let skillCard = [{
 ]
 // v-for渲染页面
 for (let key in skillCard) {
-
-    $('#skill-card').append(
-        `
-<div class="col  pr-0 mb-2">
-    <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-md-4 border-right">
-                <img src="${skillCard[key].imgSrc}"
-                    class="card-img img-fluid p-4">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body p-2">
-                    <h5 class="card-title text-dark text-center">${skillCard[key].title}</h5>
-                    <p class="card-text text-dark">${skillCard[key].content}</p>
-                    <p class="card-text text-right text-muted pt-2">
-                        <small>${skillCard[key].footer}</small>
-                    </p>
+$('#skill-card').append(
+    `
+        <div class="col  pr-0 mb-2">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4 border-right">
+                        <img src="${skillCard[key].imgSrc}"
+                            class="card-img img-fluid p-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body p-2">
+                            <h5 class="card-title text-dark text-center">${skillCard[key].title}</h5>
+                            <p class="card-text text-dark">${skillCard[key].content}</p>
+                            <p class="card-text text-right text-muted pt-2">
+                                <small>${skillCard[key].footer}</small>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-`
+    `
     )
 }
+
+// 鼠标移动到指定区域发生滚动
+$('.mtimer').mouseenter(function () { 
+    
+})

@@ -29,52 +29,39 @@ $(window).ready(function () {
 $('.msidebar').find('li').each((i, e) => {
     $(e).on('click', function () {
         $(this).addClass('animated pulse active').siblings().removeClass('animated pulse active')
-        // 跳转
-        switch (i) {
-            case 0: { location.href = "#first"; break; }
-            case 1: { location.href = "#second"; break }
-            case 2: { location.href = "#third"; break }
-            case 3: { location.href = "#fourth"; break }
-        }
+
         // 添加样式
     })
 })
 
 
 /* 全屏滚动 */
-$(document).on("mousewheel DOMMouseScroll", func.debounce(mscroll, 150, false));
-function mscroll(e) {
-    var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||
-        (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));
-    // 给导航条添加特效
 
-    if (delta > 0 && globalScroll.flag > 0) {
-        // 向上滚
-
-        $('body,html').scrollTop($(document.body).height() * --globalScroll.flag)
-    } else if (delta < 0 && globalScroll.flag < 3) {
-        $('body,html').scrollTop($(document.body).height() * ++globalScroll.flag)
-       
-        // 向下滚
-    }
+{
+    var pages = document.getElementsByClassName("page");
+    var wrap = document.getElementById("wrap");
+    var len = document.documentElement.clientHeight;
+    var main = document.getElementById("main");
+    wrap.style.height = len + "px";
     $('.msidebar').find('li').eq(globalScroll.flag).addClass('animated pulse active').siblings().removeClass('animated pulse active')
-    switch (globalScroll.flag) {
-        case 1: {
-            
-            $('.msidebar').css({ 'background-color': "white" })
-            break;
-        }
-        case 2: {
-            $('.msidebar').css({ 'background-color': "white" })
-            break;
-        }
-        case 3:{
-            $('.page-info').fadeIn(2000)
-            break;
-        }
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].style.height = len + "px";
 
     }
-    // 全屏滚动结束
+    if (navigator.userAgent.toLowerCase().indexOf("firefox") != -1) {
+        document.addEventListener("DOMMouseScroll", func.scrollFun);
+    } else if (document.addEventListener) {
+        document.addEventListener("mousewheel", func.scrollFun, false);
+    } else if (document.attachEvent) {
+
+        document.attachEvent("onmousewheel", func.scrollFun);
+    } else {
+
+        document.onmousewheel = scrollFun;
+    }
+    var startTime = 0;
+    var endTime = 0;
+    var now = 0;
 }
 
 

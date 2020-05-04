@@ -17,7 +17,7 @@
 	left: 30%;
 	box-shadow: 0 0 50px #ffffff;
 	border-radius: 10px;
-	
+	overflow: hidden;
 	background: #eef3f5;  /* fallback for old browsers */
 }
 /* 导航开始 */
@@ -71,4 +71,82 @@
 }
 #second .skill-content .h-100{
 	display: none;
+}
+
+/* 时间轴 */
+.mtimer{
+	margin: 0 auto;
+	position: relative;
+	overflow-y: auto;
+}
+.mtimer::-webkit-scrollbar{
+	display: none;
+}
+.mtimer ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.mtimer ul li{
+	width: 100%;
+	display: flex;
+	position: relative;
+	
+}
+.mtimer ul li div:hover {
+	cursor: pointer;
+}
+.mtimer ul li .date{
+	flex: 1;
+}
+.mtimer ul li .desc{
+	flex: 2;
+}
+.mtimer ul li .bullet{
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.mtimer ul li .bullet.blue{
+	
+	background-image: radial-gradient(rgb(177, 65, 199) 5%, rgba(202, 130, 202, 0.692) 15%, rgba(210, 86, 241, 0.336) 60%);
+	
+}
+.mtimer ul li::after{
+	content: '';
+	position: absolute;
+	border: 1px solid rgba(241, 119, 225, 0.26);
+	height: 100%;
+	left: 9px;
+	top: 20px;
+	width: 2px;
+}
+/* end */
+
+/* 编程信息 */
+.mit-info{
+	width: 98%;
+	height: 100%;
+}
+.mit-info ul{
+	padding: 0;
+	display: flex;
+	height: 100%;
+}
+
+.mit-info ul li{
+	flex: 1;
+	background-color: rgb(172, 97, 97);
+}
+.mit-info ul li.active{
+	flex: 10;
+}
+
+.mit-info ul li:first-child{
+	background-color: rgb(97, 121, 231);
+}
+.mit-info ul li:last-child{
+	background-color: rgb(30, 161, 201);
 }
