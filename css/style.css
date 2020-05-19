@@ -1,68 +1,70 @@
-
-
-
-/* 
-全局样式
-
-*/
-
-/* 自定义滚动条 */
-body::-webkit-scrollbar {
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-background: #535353;
-}
-body::-webkit-scrollbar {
-/*滚动条整体样式*/
-width: 10px;
-/*高宽分别对应横竖滚动条的尺寸*/
-height: 1px;
-}
-body::-webkit-scrollbar-thumb {
-/*滚动条里面小方块*/
-border-radius: 10px;
--webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-background: #535353;
-}
-body::-webkit-scrollbar-track {
-/*滚动条里面轨道*/
--webkit-box-shadow: inset 0 0 5px rgba(148, 52, 151, 0.2);
-border-radius: 10px;
-background: #EDEDED;
-}
-/* 禁止选中文本 */
-body{-webkit-touch-callout: none; /* iOS Safari */
--webkit-user-select: none; /* Chrome/Safari/Opera */
--khtml-user-select: none; /* Konqueror */
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* Internet Explorer/Edge */
-user-select: none; /* Non-prefixed version, currently
-not supported by any browser */}
-
-.global{
-display: none;
-}
-/* end */
-
-/* 必须 */
-body,
-html {
-width: 100%;
-height: 100%;
+.m-detail{
+	background-color: #55ff7f;
 }
 
-#wrap {
-    width: 100%;
-    overflow: hidden;
-    background: #ccc;
+
+html,
+body {
+	height: 100%;
+	overflow: auto;
 }
 
-#main {
-    width: 100%;
-    position: relative;
+/* 移动端不显示 */
+@media screen and (min-width: 500px) {
+
+	/* 自定义滚动条 */
+	body::-webkit-scrollbar {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		background: #535353;
+	}
+
+	body::-webkit-scrollbar {
+		/*滚动条整体样式*/
+		width: 10px;
+		/*高宽分别对应横竖滚动条的尺寸*/
+		height: 1px;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		/*滚动条里面小方块*/
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		background: #535353;
+	}
+
+	body::-webkit-scrollbar-track {
+		/*滚动条里面轨道*/
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		background: #EDEDED;
+	}
 }
 
-.page {
-    width: 100%;
-    margin: 0;
+
+.ball {
+	width: 40px;
+	height: 40px;
+	background-color: #000066;
+	border-radius: 20px;
+}
+
+.bgimg {
+	position: fixed;
+	z-index: -100;
+	background-image: url(../img/bgimg.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.no-bgcolor {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+	
+.m-list a{
+	color: black;
 }
