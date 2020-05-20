@@ -1,3 +1,4 @@
+
 mInfo.forEach(e => {
 	$('.m-info').append(
 		`
