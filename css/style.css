@@ -1,7 +1,40 @@
-.m-detail{
-	background-color: #55ff7f;
+/* 角标 */
+.con {
+	overflow: hidden;
 }
 
+.subscript {
+	color: #fff;
+	height: 30px;
+	width: 100px;
+
+	position: absolute;
+	right: -30px;
+	top: 5px;
+	text-align: center;
+	line-height: 30px;
+	font-family: "黑体";
+	background-color: #84837c;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+}
+
+.img-close {
+	right: 10px;
+	top: 0.625rem;
+}
+
+.nav-item a {
+	color: #535353;
+}
+
+.m-detail {
+	background-color: #55ff7f;
+}
 
 html,
 body {
@@ -41,14 +74,6 @@ body {
 	}
 }
 
-
-.ball {
-	width: 40px;
-	height: 40px;
-	background-color: #000066;
-	border-radius: 20px;
-}
-
 .bgimg {
 	position: fixed;
 	z-index: -100;
@@ -64,7 +89,6 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-	
-.m-list a{
+a {
 	color: black;
 }
