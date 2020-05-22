@@ -1,8 +1,26 @@
+.plan{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	font-size: 32px;
+}
+.person-info{
+	display: flex;
+}
+.person-info span{
+	flex: 1;
+}
+
 /* 角标 */
 .con {
 	overflow: hidden;
 }
-
+.m-nav {
+	padding: 0;
+}
+.m-nav li{
+	float: left;
+}
 .subscript {
 	color: #fff;
 	height: 30px;
