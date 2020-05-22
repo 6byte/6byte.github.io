@@ -1,3 +1,11 @@
+.contact{
+	display: flex;
+	text-align: center;
+}
+.contact span{
+	flex: 1;
+	
+}
 .plan{
 	position: absolute;
 	top: 10%;
@@ -95,7 +103,7 @@ body {
 .bgimg {
 	position: fixed;
 	z-index: -100;
-	background-image: url(../img/bgimg.jpg);
+	background-image: url(https://sixbyte.oss-cn-shanghai.aliyuncs.com/project/img/bgimg.jpg);
 	width: 100%;
 	height: 100%;
 	background-size: cover;
