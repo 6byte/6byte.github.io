@@ -318,9 +318,13 @@ let message = [{
 		title: '<h4 class="text-center m-0">简历-<span class="mpink ">初识</span></h4>',
 		content: `
 		<p class="msmall p-0">	简历-初始:简单的自我介绍,简单的关于我</p>
-		<p class="msmall p-0">	简历-认知:完整的全栈项目,展示所有技术</p>
+		<p class="msmall p-0">	简历-认知:完整的全栈项目,是对本页面中所提到的技术的实现，以及个人工作经验的补充说明</p>
+		<p>
+		<span class="text-info ">说明</span>:因为最近时间较紧，简历-<span class="mpink ">认知</span>在5月26部署上腾讯云，
+		</p>
 		`
 	},
+	
 ]
 let messageIndex = {
 	ABOUT: 0,

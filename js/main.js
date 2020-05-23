@@ -21,9 +21,5 @@ $(document).ready(function() {
 		$('#mymodal').modal('show')
 	}
 	// 正则渲染关键字
-	
-	let reg = /从未/
-	let str = $('.modal-body').text()
-	console.log(reg);
-	console.log();
+
 })
