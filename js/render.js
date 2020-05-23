@@ -5,12 +5,12 @@ myself.forEach(e => {
 		`
 <div class="col-xl-6">
 	<div class="row">
-		<div class=" col-4">
-			<p class="text-center">
+		<div class=" col-12 col-md-6 col-xl-6 col-sm-6   text-center">
+			<p >
 				${e.svg}
 			</p>
 		</div>
-		<div class="col-6  ${e.mclass}">
+		<div class="col-12 col-md-6 col-xl-6 col-sm-6  ${e.mclass}">
 			<div class="card-body ">
 				<h5 class="card-title text-center">${e.title}</h5>
 				<p class="card-text">
@@ -58,7 +58,7 @@ technology.forEach(e => {
 contact.forEach(e => {
 	$('#contact').append(
 		`
-		<div class="card-body p-3 " id="contact">
+		<div class="card-body p-1 " id="contact">
 			<div class="contact">
 				<span>
 				${e.svg}

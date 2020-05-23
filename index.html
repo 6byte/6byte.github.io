@@ -20,6 +20,9 @@
 							<a class="navbar-brand " href="#"><span class="mpink">R</span>esume</a>
 						</div>
 
+						<ul class="p-0 m-0">
+							<li id="about" >关于本页</li>
+						</ul>
 					</nav>
 				</div>
 			</div>
@@ -54,15 +57,16 @@
 									<!-- 使用js渲染 -->
 									<div class="text-center" id="technology"></div>
 								</div>
+
 								<!-- 非重要信息 -->
 								<div class="my-4  border-top">
-									<h5 class="card-title text-center pt-4">联系方式</h5>
+									<h5 class="card-title text-center pt-4">信息</h5>
 									<div>
 										<!-- 使用js渲染 -->
 										<div class="card  border-0  no-bgcolor" id="contact"></div>
-
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -141,7 +145,8 @@
 														<h5 class="font-weight-bold">将来</h5>
 														<p class="blockquote-footer text-light">展望</p>
 														<p class="text-justify">
-															希望能开发出一个项目，在github上得到一些人的认可
+															希望能开发出一个项目，在github上得到一些人的认可。
+															在这几年能拿到雅思5分的证那就更好了
 														</p>
 													</li>
 												</ul>
@@ -159,26 +164,24 @@
 		<!-- 全局模块 -->
 		<div class="global">
 
-			<!-- Modal -->
-			<div id="mmodal">
+			<!-- 单个Modal，全局复用 -->
+			<div >
 				<div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
 					<div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
 							<div class="modal-header ">
-								<h5 class="modal-title" id="modalTitle">提示</h5>
+								<h5 class="modal-title" id="modalTitle"></h5>
 								<button type="button" class="close" data-dismiss="modal">
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-body ">
-								请联系本人获取
-							</div>
+							<div class="modal-body "></div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-
+			
 
 		</div>
 
