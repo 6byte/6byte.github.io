@@ -12,21 +12,24 @@
 		<title>Resume</title>
 	</head>
 	<body class="bgimg">
-		<header>
-			<div class="row">
-				<div class="col">
-					<nav class="navbar navbar-light no-bgcolor border-bottom">
-						<div class="col-3 text-center">
-							<a class="navbar-brand " href="#"><span class="mpink">R</span>esume</a>
-						</div>
-
-						<ul class="p-0 m-0">
-							<li id="about" >关于本页</li>
-						</ul>
-					</nav>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<nav class="navbar navbar-light no-bgcolor border-bottom">
+							<div class="col-3 text-center">
+								<a class="navbar-brand " href="#"><span class="mpink">R</span>esume</a>
+							</div>
+							<div class="col-4 offset-5 text-center">
+								<ul class="p-0 m-0">
+									<li id="about">关于本页</li>
+								</ul>
+							</div>
+							
+						</nav>
+					</div>
 				</div>
 			</div>
-		</header>
+			
 
 
 		<section>
@@ -45,19 +48,12 @@
 								</div>
 							</div>
 							<!-- 具体信息栏 -->
-							<div class="card-body " id="baseinfo">
+							<div class="card-body p-0 " id="baseinfo">
 
 								<div>
 									<!-- 使用js渲染 -->
 									<div class="m-info"></div>
 								</div>
-
-								<div class="my-4 ">
-									<h5 class="card-title text-center border-top pt-4">拓展技术栈</h5>
-									<!-- 使用js渲染 -->
-									<div class="text-center" id="technology"></div>
-								</div>
-
 								<!-- 非重要信息 -->
 								<div class="my-4  border-top">
 									<h5 class="card-title text-center pt-4">信息</h5>
@@ -66,6 +62,22 @@
 										<div class="card  border-0  no-bgcolor" id="contact"></div>
 									</div>
 								</div>
+
+
+								<div class="my-4 ">
+									<h5 class="card-title text-center border-top pt-4">熟悉程度预览</h5>
+									<div>
+										<blockquote class="blockquote text-center">
+										  <footer class="blockquote-footer msmall">熟悉程度代表个人所投入的时间</footer>
+										</blockquote>
+										
+									</div>
+									<!-- 使用js渲染 -->
+									<div class="text-center" id="technology"></div>
+									
+								</div>
+
+
 
 							</div>
 						</div>
@@ -165,7 +177,7 @@
 		<div class="global">
 
 			<!-- 单个Modal，全局复用 -->
-			<div >
+			<div>
 				<div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
 					<div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
@@ -181,7 +193,7 @@
 				</div>
 			</div>
 
-			
+
 
 		</div>
 
