@@ -1,6 +1,11 @@
 $(document).ready(function() {
-
-	openModal(messageIndex.INDEX)
+	// 再次访问不弹出提示框
+	localStorage.setItem("review","true")
+	let review = localStorage.getItem("review")
+	if(func.isEmpty(review)){
+		openModal(messageIndex.INDEX)
+	}
+	
 	
 	
 	$('.img-close').click(function() {

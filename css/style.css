@@ -33,7 +33,6 @@
 	color: #fff;
 	height: 30px;
 	width: 100px;
-
 	position: absolute;
 	right: -30px;
 	top: 5px;
@@ -102,7 +101,7 @@ body {
 
 .bgimg {
 	position: fixed;
-	z-index: -100;
+	z-index: -1000;
 	background-image: url(https://sixbyte.oss-cn-shanghai.aliyuncs.com/project/img/bgimg.jpg);
 	width: 100%;
 	height: 100%;
@@ -115,6 +114,7 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-a {
-	color: rgba(57, 19, 57, 1.0) !important;
+
+a,#about:hover{
+	cursor: pointer;
 }
