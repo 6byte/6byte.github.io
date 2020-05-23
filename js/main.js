@@ -1,9 +1,11 @@
 $(document).ready(function() {
 	// 再次访问不弹出提示框
-	localStorage.setItem("review","true")
+	
 	let review = localStorage.getItem("review")
 	if(func.isEmpty(review)){
+		console.log(review);
 		openModal(messageIndex.INDEX)
+		localStorage.setItem("review","true")
 	}
 	
 	
