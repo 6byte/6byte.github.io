@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-
+	openModal(messageIndex.INDEX)
+	
+	
 	$('.img-close').click(function() {
 		$(this).hide().siblings().hide()
 	})
@@ -14,13 +16,14 @@ $(document).ready(function() {
 	})
 
 	function openModal(index) {
-
 		$('#modalTitle').html(message[index].title)
 		$('.modal-body').html(message[index].content)
 		$('#mymodal').modal('show')
 	}
+	// 正则渲染关键字
+	
+	let reg = /从未/
+	let str = $('.modal-body').text()
+	console.log(reg);
+	console.log();
 })
-
-// window.onresize = function() {
-// 	console.log(document.body.offsetWidth);
-// }

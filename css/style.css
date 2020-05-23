@@ -116,5 +116,5 @@ body {
 }
 
 a {
-	color: black;
+	color: rgba(57, 19, 57, 1.0) !important;
 }
