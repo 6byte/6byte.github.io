@@ -217,7 +217,7 @@ let contact = [{
 				</svg>
 		`,
 		title: '意向',
-		content: 'Java和前端'
+		content: 'Java或前端'
 	},
 	// {
 	// 	svg: `
@@ -244,9 +244,12 @@ let cardList = [{
 		language: 'Java',
 		introduce: `
 				<p class = "m-0">1.使用SpringBoot,Mybatis,Spring进行后台接口开发</p>
-				<p class = "m-0">2.熟悉面向对象编程思想,并且有自己的理解！</p>
+				<p class = "m-0">2.熟悉面向对象编程思想</p>
 				<p class = "m-0">3.了解Java 反射机制,BIO</p>
-				<p class = "m-0">4.了解请求从发送到响应的全过程</p>`,
+				<p class = "m-0">4.了解网络协议</p>
+				<p class = "m-0">5.了解部分设计模式和jvm原理</p>
+				<p class = "m-0">6.了解基本数据结构</p>
+				`,
 		titleSvg: `
 				<svg t="1589885211939" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
 				 p-id="2001" width="1.5em" height="1.5em">
@@ -262,10 +265,10 @@ let cardList = [{
 					 fill="#bfbfbf" p-id="5937"></path>
 				</svg>
 		`,
-		language: 'Js&Html&Css',
+		language: '前端',
 		introduce: `
 				<p class = "m-0">1.熟悉Bootstrap和Jquery框架</p>
-				<p class = "m-0">2.了解ES6,该段文字使用<span class="mpink">模板字符串</span>渲染</p>
+				<p class = "m-0">2.了解ES6语法</p>
 				<p class = "m-0">3.熟练使用Bootstrap进行响应式开发,兼容移动端和PC端</p>`,
 		titleSvg: `
 				<svg t="1589886060304" class="icon" viewBox="0 0 1126 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6672"
@@ -284,9 +287,9 @@ let cardList = [{
 		language: 'Vue',
 		introduce: `
 				<p class = "m-0 ">1.通过axois与后台数据进行交互</p>
-				<p class = "m-0">2.主要使用Vue +vue.router完成页面展示</p>
+				<p class = "m-0">2.使用Vue +vue.router完成页面展示</p>
 				<p class = "m-0">3.使用vuetify框架+vue进行项目的快速开发</p>
-				<p class = "m-0">4.手绘UI设计稿实现</p>`,
+				<p class = "m-0">4.手绘UI设计稿并实现</p>`,
 		titleSvg: `
 				<svg t="1589885666662" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3588"
 				 width="1.5em" height="1.5em">
@@ -307,7 +310,7 @@ let cardList = [{
 		introduce: `
 				<p class = "m-0">1.熟悉基本CURD</p>
 				<p class = "m-0">2.能实现非复杂型业务逻辑</p>
-				<p class = "m-0 ">3.<a id="mysql" class="mpink">详情参见个人DEMO</a></p>`,
+				`,
 		titleSvg: `
 				<svg t="1589885909303" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5075"
 				 width="1.5em" height="1.5em">
@@ -331,8 +334,9 @@ let message = [{
 	{
 		title: '<h4 class="text-center m-0">简历-<span class="mpink ">初识</span></h4>',
 		content: `
-				<p class="msmall p-0">	简历-初始:简单的自我介绍,简单的关于我</p>
-				<p class="msmall p-0">	简历-认知:完整的全栈项目,是对本页面中所提到的技术的实现，以及个人工作经验的补充说明</p>
+				<p class="msmall p-0">
+					你好，很多知识学校并未开设对应课程,所有内容纯属个人出于爱好自学
+				</p>
 		`
 	},
 
