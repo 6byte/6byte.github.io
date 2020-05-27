@@ -59,10 +59,9 @@ let myself = [{
 			</svg>`,
 		title: '多元',
 		content: `
-				<p>1.接触过51单片机开发,学习过相关的物理知识,对整个计算机有全面的认知</p>
-				<p>2.熟悉主流硬件,能进行一级故障排除,购买设备组装电脑等</p>
-				<p>3.接触过C,python,c#三种编程语言,对桌面应用程序,爬虫有所了解</p>
-				<p>4.能使用PS进行图片处理工作</p>
+				<p>1.接触过51单片机开发,学习过相关的物理知识,对整个计算机体系有全面的认知</p>
+				<p>2.接触过C,python,c#三种编程语言,对桌面应用程序,爬虫有所了解</p>
+				
 		`,
 		footer: '',
 		mclass: 'bg-dark text-light rounded'
@@ -287,6 +286,7 @@ let cardList = [{
 		introduce: `
 				<p class = "m-0">1.熟悉基本CURD</p>
 				<p class = "m-0">2.能实现非复杂型业务逻辑</p>
+				<p class = "m-0">3.了解索引,以及部分优化知识</p>
 				`,
 		titleSvg: `
 				<svg t="1589885909303" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5075"
