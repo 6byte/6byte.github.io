@@ -10,13 +10,12 @@ myself.forEach(e => {
 				${e.svg}
 			</p>
 		</div>
-		<div class="col-12 col-md-6 col-xl-6 col-sm-6  ${e.mclass}">
+		<div class="col-12 col-md-6 col-xl-6 col-sm-6 ">
 			<div class="card-body ">
 				<h5 class="card-title text-center">${e.title}</h5>
 				<p class="card-text">
 					${e.content}
 				</p>
-				<p class="card-text text-right"><small >${e.footer}</small></p>
 			</div>
 		</div>
 	</div>
