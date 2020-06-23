@@ -204,7 +204,7 @@ mf-word-**		pink purple grey
 }
 
 .msmall {
-	font-size: 10px
+	font-size: 8px !important
 }
 
 .mlogo {
