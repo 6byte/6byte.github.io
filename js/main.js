@@ -24,8 +24,22 @@ $(document).ready(function() {
 		$('#mymodal').modal('show')
 	}
 	// 正则渲染关键字
-	$('#program').click(function(){
+	$('#program').click(function() {
 		$('#mypro').modal('show')
 	})
-$('#mypro').modal('show')
+	//定义变量获取屏幕视口宽度
+	var windowWidth = $(window).width();
+	if (windowWidth < 500) {
+		$('#toBili button').attr('disabled', 'disabled').text('请在电脑上打开')
+	}
+	window.onresize = function() {
+		var windowWidth = $(window).width();
+		if (windowWidth > 700) {
+			$('#toBili button').removeAttr('disabled').text('前往')
+		}
+		if (windowWidth < 500) {
+			$('#toBili button').attr('disabled', 'disabled').text('请在电脑上打开')
+		}
+	}
+
 })

@@ -1,27 +1,30 @@
-.contact{
+.contact {
 	display: flex;
 	text-align: center;
 }
-.contact span{
+
+.contact span {
 	flex: 1;
-	
+
 }
 
-.img-fluid:hover{
-	transform: scale(4);
-	transition: 1s;
+.img-fluid:hover {
+	transform: scale(3);
+	transition: 0.5s;
 }
 
-.plan{
+.plan {
 	position: absolute;
 	top: 10%;
 	left: 10%;
 	font-size: 32px;
 }
-.person-info{
+
+.person-info {
 	display: flex;
 }
-.person-info span{
+
+.person-info span {
 	flex: 1;
 }
 
@@ -29,12 +32,15 @@
 .con {
 	overflow: hidden;
 }
+
 .m-nav {
 	padding: 0;
 }
-.m-nav li{
+
+.m-nav li {
 	float: left;
 }
+
 .subscript {
 	color: #fff;
 	height: 30px;
@@ -121,6 +127,7 @@ body {
 }
 
 
-a,#about:hover{
+a,
+#about:hover {
 	cursor: pointer;
 }
