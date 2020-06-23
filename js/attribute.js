@@ -192,6 +192,7 @@ let cardList = [{
 				<p class = "m-0">4.了解HTTP/TCP网络协议</p>
 				<p class = "m-0">5.了解Aop的基本使用</p>
 				<p class = "m-0">6.了解基本数据结构</p>
+				<p class = "m-0" >7.了解基本业务流程,可从0到1完成<a id="program" class="mpink">项目</a></p>
 		`,
 		titleSvg: `
 				<svg t="1589885211939" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -240,6 +241,7 @@ let cardList = [{
 				<p class = "m-0">2.能完成较少表的逻辑，如shiro权限开发</p>
 				<p class = "m-0">3.了解基本优化知识，使用explain查看是否触发全表扫描</p>
 				<p class = "m-0">4.熟悉Linux基本命令操作,独立部署Tomcat服务器,Nginx服务器</p>
+				<p class = "m-0">5.具备一定的安全的意识,关键密码均通过MD5校验算法转换</p>
 				`,
 		titleSvg: `
 				<svg t="1589885909303" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5075"

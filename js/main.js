@@ -24,5 +24,8 @@ $(document).ready(function() {
 		$('#mymodal').modal('show')
 	}
 	// 正则渲染关键字
-
+	$('#program').click(function(){
+		$('#mypro').modal('show')
+	})
+$('#mypro').modal('show')
 })

@@ -6,6 +6,12 @@
 	flex: 1;
 	
 }
+
+.img-fluid:hover{
+	transform: scale(4);
+	transition: 1s;
+}
+
 .plan{
 	position: absolute;
 	top: 10%;

@@ -173,7 +173,12 @@ mf-word-**		pink purple grey
 .mwhite{
 	color: white;
 }
-
+.mblack{
+	color: #000000;
+}
+.mblue{
+	color: aqua;
+}
 .mf-word-pink::first-letter {
 	color: rgba(255, 85, 255, 0.8);
 }
@@ -204,7 +209,7 @@ mf-word-**		pink purple grey
 }
 
 .msmall {
-	font-size: 8px !important
+	font-size: 10px !important
 }
 
 .mlogo {
