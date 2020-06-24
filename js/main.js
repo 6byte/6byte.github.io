@@ -10,23 +10,13 @@ $(document).ready(function() {
 		$(this).hide().siblings().hide()
 	})
 
-	// 显示模态框
-	$('#about').click(function() {
-		openModal(messageIndex.ABOUT)
-	})
-	$('#mysql').click(function() {
-		openModal(messageIndex.MYSQL)
-	})
 
-	function openModal(index) {
-		$('#modalTitle').html(message[index].title)
-		$('.modal-body').html(message[index].content)
-		$('#mymodal').modal('show')
-	}
-	// 正则渲染关键字
+	
 	$('#program').click(function() {
+		console.log('---');
 		$('#mypro').modal('show')
 	})
+	
 	//定义变量获取屏幕视口宽度
 	var windowWidth = $(window).width();
 	if (windowWidth < 500) {
@@ -41,5 +31,4 @@ $(document).ready(function() {
 			$('#toBili button').attr('disabled', 'disabled').text('请在电脑上打开')
 		}
 	}
-
 })
