@@ -1,44 +1,3 @@
-
-
-myself.forEach(e => {
-	$('#myself').append(
-		`
-<div class="col-xl-6">
-	<div class="row">
-		<div class=" col-12 col-md-6 col-xl-6 col-sm-6   text-center">
-			<p >
-				${e.svg}
-			</p>
-		</div>
-		<div class="col-12 col-md-6 col-xl-6 col-sm-6 ">
-			<div class="card-body ">
-				<h5 class="card-title text-center">${e.title}</h5>
-				<p class="card-text">
-					${e.content}
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-`
-	)
-
-})
-mInfo.forEach(e => {
-	$('.m-info').append(
-		`
-		<p class="card-text text-center person-info">
-			<span>
-				${e.svg}${e.title}
-			</span>
-			<span>
-				${e.content}
-			</span>
-		</p>
-		`
-	)
-})
-
 technology.forEach(e => {
 	$('#technology').append(
 		`
@@ -60,7 +19,7 @@ contact.forEach(e => {
 		<div class="card-body p-1 " id="contact">
 			<div class="contact">
 				<span>
-				${e.svg}
+					${e.svg}
 					${e.title}
 				</span>
 				<span class="float-right">
