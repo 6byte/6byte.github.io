@@ -71,7 +71,7 @@ let contact = [{
 				</svg>
 		`,
 		title: '意向',
-		content: 'Java或前端'
+		content: '全栈'
 	},
 
 ]

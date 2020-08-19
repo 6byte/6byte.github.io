@@ -114,7 +114,7 @@ body {
 .bgimg {
 	position: fixed;
 	z-index: -1000;
-	background-image: url(https://sixbyte.oss-cn-shanghai.aliyuncs.com/project/img/bgimg.jpg);
+	/* background-image: url(https://sixbyte.oss-cn-shanghai.aliyuncs.com/project/img/bgimg.jpg); */
 	width: 100%;
 	height: 100%;
 	background-size: cover;
