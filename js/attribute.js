@@ -35,7 +35,7 @@ let contact = [{
 					  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708l-7 7a.5.5 0 0 0 .708.708l7-7z" clip-rule="evenodd"/>
 					</svg>`,
 		title: '姓名',
-		content: '吴文龙'
+		content: 'venlong'
 	},
 	{
 		svg: `
